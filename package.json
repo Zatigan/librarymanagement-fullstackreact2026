@@ -1,0 +1,24 @@
+{
+  "name": "librarymanagement-fullstackreact2026",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "install:fullstack": "concurrently \"npm run install:frontend\" \"npm run install:backend\"",
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "install:frontend": "cd frontend && npm i",
+    "install:backend": "cd backend && npm i",
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Application pédagogique full-stack React et Node.js pour la gestion d’une bibliothèque.",
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  },
+  "engines": {
+    "node": "^22.22.3 || ^24.15.0 || >=26.0.0"
+  },
+  "packageManager": "npm@11.6.2"
+}
