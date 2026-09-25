@@ -60,6 +60,7 @@ export function AddBookPage() {
             type="number"
             id="copies"
             name="totalCopies"
+            className='Test'
             required
             min="1"
             value={totalCopies}
