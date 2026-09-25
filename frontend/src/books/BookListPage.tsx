@@ -71,7 +71,7 @@ export function BookListPage() {
               <tr className="book-item" key={book.id ?? `${book.title}-${book.author}`}>
                 <td>{book.title}</td>
                 <td>{book.author}</td>
-                <td>{book.available_copies}</td>
+                <td data-cy="available-copies">{book.available_copies}</td>
                 <td>{book.total_copies}</td>
                 <td>
                   {book.id !== undefined && (
